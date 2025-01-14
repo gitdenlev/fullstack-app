@@ -4,5 +4,8 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
   nitro: {
     preset: 'vercel'
+  },
+  runtimeConfig: {
+    MONGO_URI: process.env.MONGO_URI
   }
 })
